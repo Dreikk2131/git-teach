@@ -1,0 +1,33 @@
+<html>
+
+   <head>
+   <title>My first page </title>
+   <script type="text/javascript">
+  function digitalWatch() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if (hours < 10) hours = "0" + hours;
+    if (minutes < 10) minutes = "0" + minutes;
+    if (seconds < 10) seconds = "0" + seconds;
+    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
+    setTimeout("digitalWatch()", 1000);
+  }
+</script>
+   </head>
+
+   <body style = "background-color: yellow;">
+   <b><p> Ура, моя первая страница
+<p><i>Попытайтесь самостоятельно создать <br /> несколько страниц</i></p>
+</p></b>
+   <i><p><h3> Смотр приоритета тэгов </h3></p></i>
+   <p><h3 style="background-color:#ff0000;"> Список фкуктор </h3></p>
+   <p> <ol> 
+   <li> Orange</li> 
+   <li> Apple</li>
+   <li> Cherry</li>
+</ol> </p>
+   </body>
+
+</html>
