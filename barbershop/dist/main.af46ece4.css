@@ -1,0 +1,197 @@
+body{
+    background-image: url(background.004d778f.jpg)
+}
+h1{
+    display:none;
+}
+
+header{
+    color: aliceblue;
+}
+
+.head-menu{
+    height: 70px;
+}
+
+.head-menu ul{
+    display: inline-block;
+    margin: 0;
+    height: 70px;
+}
+
+.main-menu{
+    display: block;
+    width:85%;
+    padding:0;
+    list-style: none;
+}
+.user-menu{
+    display: block;
+    width: 10%;
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.head-menu li{
+    display: inline-block;
+    font-size: 15px;
+    width:120px;
+    height:20px;
+    margin:15px 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.brand{
+    display: block;
+    width:400px;
+    height: 180px;
+    margin:0 auto;
+}
+
+section {
+    margin: 20px;
+    widows: 100%;
+    height:300px;
+    color: white;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.about-us .fast{
+    float: left;
+    width:30%;
+    padding:20px;
+    padding-top:40px;
+}
+.fast h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.fast p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.first{
+    background-color: #f7f4f1;
+    color: black; 
+}
+
+.news{
+    float: left;
+    width: 50%;
+}
+
+.news h2{
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.news ul{
+    list-style: none;
+}
+.news li{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 80px;
+}
+
+.line{
+    position:absolute;
+    left:600px;
+}
+
+.news a{
+    background-color: black;
+    color:white;
+    display: block;
+    text-decoration: none;
+    width:130px;
+    height: 20px;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 40px;
+
+}
+
+.news img{
+    margin-left: 30px;
+}
+
+.button-rule{
+    padding: 0;
+    margin: 10 30;
+    list-style: none;
+}
+
+.button-rule li{
+    display: inline-block;
+    width:130px;
+    height:20px;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 0px;
+    background-color: black;
+    color:white;
+}
+
+.second{
+    background-color: #f7f4f1;
+}
+
+.contact{
+    float: left;
+    width: 50%;
+    color:black;
+}
+
+.contact h2{
+    text-transform: uppercase;
+    display: block;
+    margin-left: 40px;
+}
+
+.contact p{
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: block;
+    margin-left:40px;
+}
+
+footer{
+    color:white;
+    background-color: #232323;
+    height: 150px;
+}
+
+.adress{
+    float: left;
+    width: 33%;
+}
+.adress p{
+    text-transform: uppercase;
+    font-size: 11px;
+    display: block;
+    line-height: 1.5;
+    margin-left: 40px;
+}
+
+
