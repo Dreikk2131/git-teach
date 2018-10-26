@@ -15,7 +15,11 @@ app.get("/add/:name", (req, res)=>{
 
 app.get("/delete/:name", (req, res)=>{
     var y =req.params.name;
-    arr.splice(arr.indexOf(req.params.name),1);
+    arr.forEach((item)=>{
+        if(req.params.name==item){
+        arr.splice(arr.indexOf(req.params.name),1);
+        }
+   })
     res.send(arr);
 });
 
