@@ -1,0 +1,55 @@
+.body{
+    font-family: "PT Sans", "Arial", serif;
+    background-color: lightgrey;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (min-width: 300px) {
+    html {
+      font-size: 12px;
+    }
+
+    .square{
+        height: 30px;
+        width: 30px;
+    }
+  }
+  /* на md */
+  @media (min-width: 850px) {
+    html {
+      font-size: 14px;
+    }
+
+    .square{
+        height: 40px;
+        width: 40px;
+    }
+  }
+  /* на lg */
+  @media (min-width: 1200px) {
+    html {
+      font-size: 16px;
+    }
+
+    .square{
+        height: 50px;
+        width: 50px;
+    }
+  }
+
+.head{
+    background-color: black;
+    font-weight: bold;
+    line-height: 54px;
+}
+
+
+.nav-link{
+    color: white!important;
+}
+
+.info-foto{
+    width: 500px;
+}
+
