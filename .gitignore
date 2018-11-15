@@ -4,7 +4,6 @@
 ### Java-Web ###
 ## ignoring target file
 target/
-old/
 
 barbershop/dist/
 node_modules/
