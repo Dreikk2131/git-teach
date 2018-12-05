@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Хлебомолы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body class="body">
+    <header class="head">
+        <div class="head__top">
+            <div class="head__list">            
+                <a href="#" class="head__link">О магазине</a>
+                <a href="#" class="head__link">Доставка и самовывоз</a>
+                <a href="#" class="head__link">Оплата</a>
+                <a href="#" class="head__link">Контакты</a>
+                <a href="#" class="head__link">Блог</a>
+                <span class= "head__sity">Город:</span> <a href="#" class="head__link">Москва</a>
+                <a href="#" class="head__link head__link_personal-area">Личный кабинет</a>
+           </div>
+        </div>
+        <div class="head__middle">
+            <div class="head__brand">
+                <img src="img/head-label.png" alt = "label" class="head__img">
+                <div class="head__text">
+                    <h1 class="head__name">Хлебомолы</h1>
+                    <p class="head__slogan">Технологии правильного питания</p>
+                </div>
+            </div>
+            <div class="head__search">
+                <form class="head__container-1">
+                    <span class="icon"><img src="img/magnifier.jpg"></span>
+                    <input type="search" id="search" placeholder="Найти что-нибудь" />
+                </form>
+            </div>
+            <div class="head__callback">
+                <img src="img/head-telephone.png" alt = "telephone +7 800 555-33-86" class="head__telephone">
+                <a href="#" class="head__texts">Обратный звонок</a>
+            </div>
+        </div>
+        <div class="head__bottom">
+            <a href="#" class="head__link_bottom">Мельницы</a>
+            <a href="#" class="head__link_bottom">Техника</a>
+            <a href="#" class="head__link_bottom">Для выпечки</a>
+            <a href="#" class="head__link_bottom">Посуда</a>
+            <a href="#" class="head__link_bottom">Проращиватели</a>
+            <a href="#" class="head__link_bottom">Детям</a>
+            <a href="#" class="head__link_bottom">Чай из непала</a>
+            <p class="head__price">13 990 &#8381;</p>
+        </div>
+    </header>
+    <section class="main">
+        <section class="content content-left">
+            <div class="content__border">
+                <h2 class="content__head">Оформление заказа</h2>
+                <a href="#" class="content__button content__button_left">Физическое лицо</a>
+                <a href="#" class="content__button content__button_right">Юридическое лицо</a>
+            </div>
+            <form id="commentform" class="comment-form">
+                <legend><h2 class="content__adress">Контактные данные </h2></legend>
+                <div class="content__input-div">
+                    <p class="content__text">Имя</p><br>
+                    <input  class="field" id="name" autocomplete="off" placeholder="Александр" name="name" type="text" value="" pattern="^[^0-9]+$" required>
+                    <label  class = "content__input-label" for="name">Имя не может содержать цифр и спец символов</label>
+                </div>
+                <div class="content__input-div">
+                    <p class="content__text">Фамилия</p><br>
+                    <input class="field" id="surname" autocomplete="off" placeholder="Пушкин *" name="surname" type="text" value="" pattern="^[^0-9]+$" required>
+                    <label for="surname" >Фамилия не может содержать цифр и спец символов</label>
+                </div>
+                <div class="content__input-div">
+                    <p class="content__text">Эл. почта</p><br>
+                    <input class="field" id="email" autocomplete="off" placeholder="Email *" name="email" type="email" value="" aria-describedby="email-notes"  required>
+                    <label for="email" >Електронная почта</label>
+                </div>
+                <div class="content__input-div">
+                    <p class="content__text">Номер телефона</p><br>
+                    <input  class="field" id="name" autocomplete="off" placeholder="+7 999 4323421" name="tel" type="tel" value="" pattern="^\+7\s\d{3}\s\d{7}" required>
+                    <label for="tel" >Номер не может содержать букв</label>
+                </div>
+            </form>
+            </div>
+            <div class="content__adress_div">
+                <h3 class="content__adress">Адресс и способ доставки</h3>
+                <div class="content__country">
+                    <p class="content__text">Страна</p><br>
+                    <select>
+                        <option value="country" class="content__text">Россия</option>
+                        <option value="country" class="content__text">Белорусия</option>
+                        <option value="country" class="content__text">Казахстан</option>
+                    </select><br><br>
+                </div>
+                <div class="content__sity">
+                    <p class="content__text">Город</p><br>
+                    <input type="text" placeholder="Москва" class="content__text">
+                </div>
+            </div>
+            <div class="content__way">
+                <h3 class="content__adress">Способ доставки</h3>
+                <div class="content__radio">
+                    <div class="content__radio-but">
+                        <p class="content__text-radio"><input name="dzen" type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"> Доставка курьерской службой &mdash; 710 Р</p>
+                        <p class="content__text-info">(Срок доставки &mdash; 1-3 дня</p>
+                    </div>
+                    <div class="content__radio-but">
+                        <p class="content__text-radio"><input name="dzen" type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"> Доставка траспортной компанией &mdash; 210 Р</p>
+                        <p class="content__text-info">Данный вид доставки возможен при полной предоплате заказа. Срок доставки &mdash; 3-5 дней </p>
+                    </div>
+                    <div class="content__radio-but">
+                        <p class="content__text-radio"><input name="dzen" type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck"> Самовывоз &mdash; 180 Р</p>
+                        <p class="content__text-info">Доставка до пункта самовывоза займет 2-3 дня</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__pickup" id="ifYes" style="display: none">
+                <h3 class="content__item">Пункт самовывоза</h3>
+                <p class="content__text">Станция метро</p><br>
+                <select>
+                    <option value="country">Кузнецкий мост</option>
+                    <option value="country">Каширское шоссе</option>
+                </select>
+                <div class="content__map">
+                    <p class="content__map-text">Ул. Кузнецкий мост, 9/10 стр.2, офис 204<br>
+                    Ежедневно с 12:00 до 22:00</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="content__adress">Комментарий к заказу</h3>
+                <textarea name="comment" class="content__textarea"></textarea>
+                <input value="К выбору способа оплаты" type="button" class="content__input_end">
+            </div>
+        </section>
+        <section class="content-right">
+                <div class="content__div-order-top field-order">
+                    <h3 class="content__head-order ">Ваш заказ</h3>
+                    <div>
+                        <p class="content__order-text field-order">Мельница ручная Kornkraft Mia aMola</p>
+                        <p class="content__order-price field-order">18 990 &#8381;</p>
+                    </div>
+                    <div>
+                        <p class="content__order-text field-order">Пшеница БИО, 1кг (Россия) (2шт)</p>
+                        <p class="content__order-price field-order">420 &#8381;</p>
+                    </div>
+                </div>
+                <div class="content__div-order-middle">
+                    <p class="content__order-text field-order">Размер скидки (5%)</p>
+                    <p class="content__order-price field-order">420 &#8381;</p>
+                    <p class="content__order-text field-order">Итого</p>
+                    <p class="content__order-price field-order">18 344 &#8381;</p>
+                    <p class="content__order-text field-order">Самовывоз</p>
+                    <p class="content__order-price field-order">390 &#8381;</p>
+                </div>
+                <div class="content__div-order-bottom">
+                    <p class="content__order-total">Сумма с доставкой</p>
+                    <p class="content__order-total">18 734 &#8381;</p>
+                </div>
+            </section>
+    </section>
+    
+    <footer class="foot">
+        <div class="foot__align">
+            <div class="foot__div">
+                <h4 class="foot__head">Каталог</h4>
+                <a href="#" class="foot__link">Мельницы</a>
+                <a href="#" class="foot__link">Техника</a>
+                <a href="#" class="foot__link">Для выпечки</a>
+                <a href="#" class="foot__link">Посуда</a>
+                <a href="#" class="foot__link">Проращиватели</a>
+                <a href="#" class="foot__link">Детям</a>
+                <a href="#" class="foot__link">Чай из Непала</a>
+            </div>
+            <div class="foot__div">
+                <h4 class="foot__head">Информация</h4>
+                <a href="#" class="foot__link">Доставка и самовывоз</a>
+                <a href="#" class="foot__link">О магазине</a>
+                <a href="#" class="foot__link">10 причин покупать у нас</a>
+                <a href="#" class="foot__link">Оплата</a>
+                <a href="#" class="foot__link">Мастер-классы</a>
+                <a href="#" class="foot__link">Блог</a>
+            </div>
+            <div class="foot__div">
+                <h4 class="foot__head">Контакты</h4>
+                <p class="foot__link">+7(495)789 41 43 &mdash; Москва</p>
+                <p class="foot__link">+7(812)385 55 86 &mdash; Санкт-Петербург</p>
+                <p class="foot__link">+7(800)555 33 86 &mdash; вся Россия</p>
+                <a href="#" class="foot__link">Обратная связь</a>
+                <a href="#" class="foot__link">info@hlebomail.ru</a>
+            </div>
+            <div class="foot__div">
+                <h4 class="foot__head">Вступайте в клуб</h4>
+                <p class="foot__link">Подпишитесь на наши новости и будьте в курсе всех акций, скидок и новых поступлений, а также самых изысканных рецептов</p>
+                <input type="text" placeholder="Ваша эл.почта" class="content__name field">
+            </div>
+        </div>
+        <div class="foot__bottom-div">
+            <p class="foot__link foot__text">Хлебомолы &copy; 2014-2015</p>
+            <div class="foot__soc-web">
+                <img src='img/vk.png' alt='vkontante'>
+                <img src='img/facebook.png'>
+                <img src='img/instagram.png'>
+                <img src='img/circle1.png'>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
