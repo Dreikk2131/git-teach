@@ -1,109 +1,209 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Хлебомолы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     
-    <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
-    <title>Hello, world!</title>
-  </head>
-  <body class="body">
-    <header class="head container-fluid justify-content-center row">
-        <nav class="navbar navbar-expand-lg navbar-light col-sm-9 ">
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="#">Информация</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="#">Новости</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="#">Прайс-лист</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="#">Магазин</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="#">Контакты</a>
-                      </li>
-                    <li class="divider"></li>
-                  </ul>
+</head>
+<body class="body">
+    <header class="head">
+        <div class="head__top">
+            <div class="head__list">            
+                <a href="#" class="head__link">О магазине</a>
+                <a href="#" class="head__link">Доставка и самовывоз</a>
+                <a href="#" class="head__link">Оплата</a>
+                <a href="#" class="head__link">Контакты</a>
+                <a href="#" class="head__link">Блог</a>
+                <span class= "head__sity">Город:</span> <a href="#" class="head__link">Москва</a>
+                <a href="#" class="head__link head__link_personal-area">Личный кабинет</a>
+           </div>
+        </div>
+        <div class="head__middle">
+            <div class="head__brand">
+                <img src="img/head-label.png" alt = "label" class="head__img">
+                <div class="head__text">
+                    <h1 class="head__name">Хлебомолы</h1>
+                    <p class="head__slogan">Технологии правильного питания</p>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <a class="nav-link text-uppercase" href="#"><img src="img/enter.svg">Вход</a>
+            <div class="head__search">
+                <form class="head__container-1">
+                    <span class="icon"><img src="img/magnifier.jpg"></span>
+                    <input type="search" id="search" placeholder="Найти что-нибудь" />
+                </form>
             </div>
-          </nav>
+            <div class="head__callback">
+                <img src="img/head-telephone.png" alt = "telephone +7 800 555-33-86" class="head__telephone">
+                <a href="#" class="head__texts">Обратный звонок</a>
+            </div>
+        </div>
+        <div class="head__bottom">
+            <a href="#" class="head__link_bottom">Мельницы</a>
+            <a href="#" class="head__link_bottom">Техника</a>
+            <a href="#" class="head__link_bottom">Для выпечки</a>
+            <a href="#" class="head__link_bottom">Посуда</a>
+            <a href="#" class="head__link_bottom">Проращиватели</a>
+            <a href="#" class="head__link_bottom">Детям</a>
+            <a href="#" class="head__link_bottom">Чай из непала</a>
+            <p class="head__price">13 990 &#8381;</p>
+        </div>
     </header>
-
-    <div class="container-fluid row justify-content-center mt-sm-5 mb-sm-5">
-      <img src="img/index-logo.svg" class="col-lg-4">
-    </div>
-
-    <section class= "container-fluid row justify-content-center">
-        <div class="col-lg-3 container-fluid row justify-content-center">
-            <h2 class="text-uppercase">быстро</h2><br>
-            <div class="container-fluid row justify-content-center mb-sm-2">
-              <img src="img/square.png" alt="square" class="square">
+    <section class="main">
+        <section class="content content-left">
+            <div class="content__border">
+                <h2 class="content__head">Оформление заказа</h2>
+                <a href="#" class="content__button content__button_left">Физическое лицо</a>
+                <a href="#" class="content__button content__button_right">Юридическое лицо</a>
             </div>
-            <p>мы делаем свою работу быстро! два часа пролетят незаметно</p>
-        </div>
-        <div class="col-lg-3 container-fluid row justify-content-center">
-            <h2 class="text-uppercase">круто</h2><br>
-            <div class="container row justify-content-center mb-sm-1">
-              <img src="img/square.png" alt="square" class="square">
+            <form id="commentform" class="comment-form">
+                <legend><h2 class="content__adress">Контактные данные </h2></legend>
+                <div class="content__input-div">
+                    <p class="content__text">Имя</p><br>
+                    <input  class="field" id="name" autocomplete="off" placeholder="Александр" name="name" type="text" value="" pattern="^[^0-9]+$" required>
+                    <label  class = "content__input-label" for="name">Имя не может содержать цифр и спец символов</label>
+                </div>
+                <div class="content__input-div">
+                    <p class="content__text">Фамилия</p><br>
+                    <input class="field" id="surname" autocomplete="off" placeholder="Пушкин *" name="surname" type="text" value="" pattern="^[^0-9]+$" required>
+                    <label for="surname" >Фамилия не может содержать цифр и спец символов</label>
+                </div>
+                <div class="content__input-div">
+                    <p class="content__text">Эл. почта</p><br>
+                    <input class="field" id="email" autocomplete="off" placeholder="Email *" name="email" type="email" value="" aria-describedby="email-notes"  required>
+                    <label for="email" >Електронная почта</label>
+                </div>
+                <div class="content__input-div">
+                    <p class="content__text">Номер телефона</p><br>
+                    <input  class="field" id="name" autocomplete="off" placeholder="+7 999 4323421" name="tel" type="tel" value="" pattern="^\+7\s\d{3}\s\d{7}" required>
+                    <label for="tel" >Номер не может содержать букв</label>
+                </div>
+            </form>
             </div>
-            <p>забудьте, как вы стриглись раньше. мы сделаем из вас звезду</p>
-        </div>
-        <div class="col-lg-3 container-fluid row justify-content-center">
-            <h2 class="text-uppercase">дорого</h2><br>
-            <div class="container row justify-content-center mb-sm-3">
-                <img src="img/square.png" alt="square" class="square">
+            <div class="content__adress_div">
+                <h3 class="content__adress">Адресс и способ доставки</h3>
+                <div class="content__country">
+                    <p class="content__text">Страна</p><br>
+                    <select>
+                        <option value="country" class="content__text">Россия</option>
+                        <option value="country" class="content__text">Белорусия</option>
+                        <option value="country" class="content__text">Казахстан</option>
+                    </select><br><br>
+                </div>
+                <div class="content__sity">
+                    <p class="content__text">Город</p><br>
+                    <input type="text" placeholder="Москва" class="content__text">
+                </div>
             </div>
-            <p>наши мастера-проффессионалы своего дела и не могут стоить дешево</p>
-        </div>
+            <div class="content__way">
+                <h3 class="content__adress">Способ доставки</h3>
+                <div class="content__radio">
+                    <div class="content__radio-but">
+                        <p class="content__text-radio"><input name="dzen" type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"> Доставка курьерской службой &mdash; 710 Р</p>
+                        <p class="content__text-info">(Срок доставки &mdash; 1-3 дня</p>
+                    </div>
+                    <div class="content__radio-but">
+                        <p class="content__text-radio"><input name="dzen" type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck"> Доставка траспортной компанией &mdash; 210 Р</p>
+                        <p class="content__text-info">Данный вид доставки возможен при полной предоплате заказа. Срок доставки &mdash; 3-5 дней </p>
+                    </div>
+                    <div class="content__radio-but">
+                        <p class="content__text-radio"><input name="dzen" type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck"> Самовывоз &mdash; 180 Р</p>
+                        <p class="content__text-info">Доставка до пункта самовывоза займет 2-3 дня</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__pickup" id="ifYes" style="display: none">
+                <h3 class="content__item">Пункт самовывоза</h3>
+                <p class="content__text">Станция метро</p><br>
+                <select>
+                    <option value="country">Кузнецкий мост</option>
+                    <option value="country">Каширское шоссе</option>
+                </select>
+                <div class="content__map">
+                    <p class="content__map-text">Ул. Кузнецкий мост, 9/10 стр.2, офис 204<br>
+                    Ежедневно с 12:00 до 22:00</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="content__adress">Комментарий к заказу</h3>
+                <textarea name="comment" class="content__textarea"></textarea>
+                <input value="К выбору способа оплаты" type="button" class="content__input_end">
+            </div>
+        </section>
+        <section class="content-right">
+                <div class="content__div-order-top field-order">
+                    <h3 class="content__head-order ">Ваш заказ</h3>
+                    <div>
+                        <p class="content__order-text field-order">Мельница ручная Kornkraft Mia aMola</p>
+                        <p class="content__order-price field-order">18 990 &#8381;</p>
+                    </div>
+                    <div>
+                        <p class="content__order-text field-order">Пшеница БИО, 1кг (Россия) (2шт)</p>
+                        <p class="content__order-price field-order">420 &#8381;</p>
+                    </div>
+                </div>
+                <div class="content__div-order-middle">
+                    <p class="content__order-text field-order">Размер скидки (5%)</p>
+                    <p class="content__order-price field-order">420 &#8381;</p>
+                    <p class="content__order-text field-order">Итого</p>
+                    <p class="content__order-price field-order">18 344 &#8381;</p>
+                    <p class="content__order-text field-order">Самовывоз</p>
+                    <p class="content__order-price field-order">390 &#8381;</p>
+                </div>
+                <div class="content__div-order-bottom">
+                    <p class="content__order-total">Сумма с доставкой</p>
+                    <p class="content__order-total">18 734 &#8381;</p>
+                </div>
+            </section>
     </section>
-
-    <section class = "info container-fluid row justify-content-center mt-sm-5">
-      <div class="col-lg-9 container-fluid row justify-content-center">
-      <div class="info__news col-lg-6">
-        <h2>Новости</h2>
-        <ul>
-          <li>
-          <p>нам наконец завезли ягермейстер! теперь вы можете пропустить стакан</p>
-          <time datetime="2018-01-11"> 11 января</time>
-          </li>
-          <li>
-          <p>в нашей команде пополнение, борис "бритва" стригунец, обладатель титулов</p>
-          <time datetime="2018-01-18">18 января</time><br>
-          </li>
-          </ul>
-          <a href="#" >все новости</a>
-      </div>
-      <div class="info__fotogalery col-lg-6">
-        <h2>фотогалерея</h2>
-        <img src="img/room.jpg" alt="work room" class="info__foto img-fluid" width="500">
-        <ul class="button-rule">
-            <li>назад</li>
-            <li>вперед</li>
-        </ul>
-      </div>
-      </div>
-    </section>
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    
+    <footer class="foot">
+        <div class="foot__align">
+            <div class="foot__div">
+                <h4 class="foot__head">Каталог</h4>
+                <a href="#" class="foot__link">Мельницы</a>
+                <a href="#" class="foot__link">Техника</a>
+                <a href="#" class="foot__link">Для выпечки</a>
+                <a href="#" class="foot__link">Посуда</a>
+                <a href="#" class="foot__link">Проращиватели</a>
+                <a href="#" class="foot__link">Детям</a>
+                <a href="#" class="foot__link">Чай из Непала</a>
+            </div>
+            <div class="foot__div">
+                <h4 class="foot__head">Информация</h4>
+                <a href="#" class="foot__link">Доставка и самовывоз</a>
+                <a href="#" class="foot__link">О магазине</a>
+                <a href="#" class="foot__link">10 причин покупать у нас</a>
+                <a href="#" class="foot__link">Оплата</a>
+                <a href="#" class="foot__link">Мастер-классы</a>
+                <a href="#" class="foot__link">Блог</a>
+            </div>
+            <div class="foot__div">
+                <h4 class="foot__head">Контакты</h4>
+                <p class="foot__link">+7(495)789 41 43 &mdash; Москва</p>
+                <p class="foot__link">+7(812)385 55 86 &mdash; Санкт-Петербург</p>
+                <p class="foot__link">+7(800)555 33 86 &mdash; вся Россия</p>
+                <a href="#" class="foot__link">Обратная связь</a>
+                <a href="#" class="foot__link">info@hlebomail.ru</a>
+            </div>
+            <div class="foot__div">
+                <h4 class="foot__head">Вступайте в клуб</h4>
+                <p class="foot__link">Подпишитесь на наши новости и будьте в курсе всех акций, скидок и новых поступлений, а также самых изысканных рецептов</p>
+                <input type="text" placeholder="Ваша эл.почта" class="content__name field">
+            </div>
+        </div>
+        <div class="foot__bottom-div">
+            <p class="foot__link foot__text">Хлебомолы &copy; 2014-2015</p>
+            <div class="foot__soc-web">
+                <img src='img/vk.png' alt='vkontante'>
+                <img src='img/facebook.png'>
+                <img src='img/instagram.png'>
+                <img src='img/circle1.png'>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
 </html>
